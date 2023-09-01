@@ -6,10 +6,10 @@ package linkedlist;
  * @Description: 链表节点定义
  */
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
-    ListNode(int x) {
+    public ListNode(int x) {
         val = x;
         next = null;
     }
