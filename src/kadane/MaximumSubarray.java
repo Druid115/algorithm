@@ -9,6 +9,9 @@ public class MaximumSubarray {
 
     /**
      * 思路：动态规划。令 dp[i] 为以 nums[i] 结尾的最大子段和，dp[i] = max{ nums[i], dp[i − 1] + nums[i] }
+     * <p>
+     * 相关题目：
+     * {@link MaximumSumCircularSubarray}
      */
     public int maxSubArray(int[] nums) {
         int res = Integer.MIN_VALUE;
