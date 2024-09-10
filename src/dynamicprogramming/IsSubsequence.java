@@ -8,7 +8,7 @@ package dynamicprogramming;
 public class IsSubsequence {
 
     /**
-     * 思路：动态规划，对于 t 的每一个位置，记录从该位置开始往后每一个字符第一次出现的位置。从后往前进行动态规划。
+     * 思路：动态规划。对于 t 的每一个位置，记录从该位置开始往后每一个字符第一次出现的位置。从后往前进行动态规划。
      */
     public boolean isSubsequence(String s, String t) {
         int m = s.length();

@@ -10,7 +10,7 @@ import java.util.*;
 public class CourseScheduleII {
 
     /**
-     * 思路：拓补排序。
+     * 思路：拓扑排序。
      */
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         int[] courseArr = new int[numCourses];

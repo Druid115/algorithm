@@ -45,7 +45,7 @@ public class CopyListWithRandomPointer {
     /**
      * 思路：构造 old1 -> new1 -> old2 -> new2 ... 这样的链表，然后设置新节点的 random 指针，最后拆分两个链表即可。
      */
-    public Node copyRandomList1(Node head) {
+    public Node copyRandomList2(Node head) {
         Node node = head;
         while (node != null) {
             Node newNode = new Node(node.val);

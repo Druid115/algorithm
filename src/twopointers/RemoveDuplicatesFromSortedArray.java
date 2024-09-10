@@ -8,7 +8,7 @@ package twopointers;
 public class RemoveDuplicatesFromSortedArray {
 
     /**
-     * 思路：采用双指针，左指针指向不重复部分的最后一个元素，
+     * 思路：使用双指针，左指针指向不重复部分的最后一个元素，
      * 右指针遍历整个数组，遇到非重复的元素，将其加入到不重复部分，同时更新左指针的位置。
      * <p>
      * 相关题目：

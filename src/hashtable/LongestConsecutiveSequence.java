@@ -39,7 +39,8 @@ public class LongestConsecutiveSequence {
 
 
     /**
-     * 思路：遍历数组中的所有数字 num，当 num 是第一次出现时：
+     * 思路：利用 map 减小遍历次数，value 表示的是 num 所在的连续区间长度。
+     * 遍历数组中的所有数字 num，当 num 是第一次出现时：
      * 1. 分别获取到左相邻数字 num - 1 的连续区间长度 left 和右相邻数字 num + 1 的连续区间长度 right；
      * 2. 计算得到当前的区间长度为 curLen = left + right + 1；
      * 3. 更新最长区间长度 ans 以及左右边界的区间长度。
