@@ -8,7 +8,7 @@ package dynamicprogramming;
 public class EditDistance {
 
     /**
-     * 思路：动态规划。可以沿用 97. 交错字符串 的思想，转换为数组来进行思考。dp[i][j] 表示 word1 的 i 位置转换成 word2 的 j 位置需要最少步数。
+     * 思路：动态规划。可以沿用 97. 交错字符串 的思想，转换为数组来进行思考。dp[i][j] 表示 word1 前 i 个字符转换成 word2 的前 j 个字符需要最少步数。
      * 当 word1[i] == word2[j]，dp[i][j] = dp[i - 1][j - 1]；
      * 否则，dp[i][j] = min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]) + 1。其中，dp[i - 1][j - 1] 表示替换操作，dp[i - 1][j] 表示删除操作，dp[i][j - 1] 表示插入操作。
      */

@@ -66,7 +66,7 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
         stack.push(root);
         int inorderIndex = 0;
 
-        for (int i = 0; i < preorder.length; i++) {
+        for (int i = 1; i < preorder.length; i++) {
             TreeNode node = stack.peek();
             if (node.val != inorder[inorderIndex]) {
                 node.left = new TreeNode(preorder[i]);

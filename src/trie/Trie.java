@@ -7,9 +7,9 @@ package trie;
  */
 public class Trie {
 
-    static class TrieNode {
+    public static class TrieNode {
         boolean end;
-        TrieNode[] next = new TrieNode[26];
+        public TrieNode[] next = new TrieNode[26];
     }
 
     private TrieNode root;
